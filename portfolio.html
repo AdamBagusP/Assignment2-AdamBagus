@@ -50,11 +50,11 @@
             </div>
           </div>
           <div class="bio-head col-sm-3">
-            <h2>Adam Bagus</h2>
-            <h5>Front End Designer</h5>
+            <h2 id="txtnama">Adam Bagus</h2>
+            <h5 id="txtrole">Front End Designer</h5>
             <div class="btn">
               <form action="">
-                <button id="edit" type="button" class="btn btn-primary">Edit</button>
+                <button onclick="hide();" id="edit" type="button" class="btn btn-primary">Edit</button>
                 <button type="button" class="btn btn-success">Resume</button>
               </form>
           </div>
@@ -67,11 +67,11 @@
             <p>Email</p>
           </div>
           <div class="bio-body col-sm-3">
-            <p>: Full Time</p>
-            <p>: 21</p>
-            <p>: Semarang</p>
-            <p>: 0 Tahun</p>
-            <p>: adampdn01.ab@gmail.com</p>
+            <p id="txtavail">: Full Time</p>
+            <p id="txtusia">: 21</p>
+            <p id="txtlokasi">: Semarang</p>
+            <p id="txtexper">: 0 Tahun</p>
+            <p id="txtemail">: adampdn01.ab@gmail.com</p>
           </div>
         </div>
       </div>
@@ -79,7 +79,7 @@
 
     <div class="container form" id="idForm" style="margin-top:50px; margin-bottom: 100px;">
       <div class="card card-body">
-        <form action="">
+        <form name="form">
           <div class="form-group">
             <label for="nama">Nama :</label>
             <input type="text" class="input form-control" id="nama" name="nama">
@@ -106,9 +106,9 @@
           </div>
           <div class="form-group">
             <label for="email">Email :</label>
-            <input type="text" class="input form-control" id="pwd" name="email">
+            <input type="text" class="input form-control" id="email" name="email">
           </div>
-          <button type="submit" class="btn btn-success btn-block" style="margin-top: 15px;">SUBMIT</button>
+          <button onclick="set();" type="button" class="btn btn-success btn-block" style="margin-top: 15px;">SUBMIT</button>
       </form>
       </div>
     </div>
