@@ -28,3 +28,7 @@ body{
 .blue-bg{
     background-color: #00345b;
 }
+
+#idForm{
+    display : none;
+}
